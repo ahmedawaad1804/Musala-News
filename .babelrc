@@ -10,7 +10,8 @@
           "palette": "./src/utilities/palette",
           "screens": "./src/screens",
           "scaling": "./src/utilities/scaling",
-          "types": "./src/types"
+          "types": "./src/types",
+          "language": "./src/language"
        
           
 

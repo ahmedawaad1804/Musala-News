@@ -4,6 +4,7 @@ import palette from 'palette';
 import Navigation from '../../navigation/index';
 
 import styles from './style';
+import LanguageButton from 'src/components/LanguageButton';
 const NewsDetails = ({route: {params}}) => {
   useEffect(() => {
     console.log(params);
@@ -15,6 +16,7 @@ const NewsDetails = ({route: {params}}) => {
       <Text style={styles.authorText}>{params.author}</Text>
       <Text style={styles.urlText}>{params.url}</Text>
       <Text style={styles.contentText}>{params.content}</Text>
+      <LanguageButton />
     </View>
   );
 };
