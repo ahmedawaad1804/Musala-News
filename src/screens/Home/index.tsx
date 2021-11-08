@@ -4,7 +4,7 @@ import palette from 'palette';
 import Navigation from '../../navigation/index';
 
 import styles from './style';
-const App = () => {
+const Home = () => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar
@@ -13,8 +13,9 @@ const App = () => {
         drawBehind={true}
         visible={true}
       />
-      <Navigation />
+      {/* <Navigation /> */}
+      <Text>home</Text>
     </SafeAreaView>
   );
 };
-export default App;
+export default Home;
