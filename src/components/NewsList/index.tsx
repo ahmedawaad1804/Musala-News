@@ -27,8 +27,8 @@ const NewsList = (props: Props) => {
         handleCarPress(item);
       }}>
       <View style={styles.innerContainer}>
-        <Text style={styles.headerText}>{item.author || 'no Adress'}</Text>
-        <Text style={styles.descriptionText}>{item.description}</Text>
+        <Text style={styles.headerText}>{item.title || 'no title'}</Text>
+        <Text style={styles.descriptionText}>{item.author}</Text>
       </View>
       <View style={styles.innerContainer}>
         <Image source={{uri: item.urlToImage}} style={styles.newsImage} />
@@ -42,6 +42,7 @@ const NewsList = (props: Props) => {
         data={props.news}
         renderItem={newsCard}
         showsVerticalScrollIndicator={false}
+        numColumns={2}
       />
     </View>
   );

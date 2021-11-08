@@ -3,6 +3,12 @@ import palette from 'palette';
 import * as scaling from 'scaling';
 
 const styles = StyleSheet.create({
+  container: {
+    backgroundColor: palette.backgroundColor,
+    flex: 1,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+  },
   cardContainer: {
     backgroundColor: palette.backgroundColor,
     width: (scaling.width * 8) / 10,
@@ -21,8 +27,8 @@ const styles = StyleSheet.create({
     padding: scaling.scale(10),
   },
   newsImage: {
-    width: (scaling.width * 8) / 10,
-    height: '100%',
+    width: scaling.width,
+    height: (scaling.height * 3) / 10,
     resizeMode: 'stretch',
   },
   innerContainer: {
@@ -32,10 +38,26 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   headerText: {
-    fontSize: 17,
+    fontSize: scaling.moderateScale(22),
   },
-  descriptionText: {
-    fontSize: 12,
+  authorText: {
+    fontSize: scaling.moderateScale(18),
+    alignSelf: 'flex-start',
+    marginStart: scaling.scale(5),
+  },
+  urlText: {
+    fontSize: scaling.moderateScale(18),
+    alignSelf: 'flex-start',
+    fontWeight: '800',
+    marginStart: scaling.scale(5),
+    color: palette.blueFont,
+  },
+  contentText: {
+    fontSize: scaling.moderateScale(18),
+    alignSelf: 'flex-start',
+    fontWeight: '800',
+    marginStart: scaling.scale(5),
+    color: palette.fontColor,
   },
 });
 

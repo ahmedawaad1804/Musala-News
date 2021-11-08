@@ -11,4 +11,5 @@ export default {
   red: '#EE4B2B',
   fontColor: '#000000',
   backgroundColor: '#FFFFFF',
+  blueFont: '#2E31FF',
 };
