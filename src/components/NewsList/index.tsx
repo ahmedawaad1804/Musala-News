@@ -12,6 +12,8 @@ import styles from './style';
 import {useNavigation} from '@react-navigation/core';
 interface Props {
   news: Array<News>;
+  refreshing: boolean;
+  onRefresh: () => void;
 }
 
 const NewsList = (props: Props) => {
@@ -43,6 +45,8 @@ const NewsList = (props: Props) => {
         renderItem={newsCard}
         showsVerticalScrollIndicator={false}
         numColumns={2}
+        refreshing={props.refreshing}
+        onRefresh={props.onRefresh}
       />
     </View>
   );

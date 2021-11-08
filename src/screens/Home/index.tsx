@@ -9,8 +9,13 @@ import {News} from '../../types/news';
 
 const Home = () => {
   const [news, setNews] = useState<News[]>([]);
+  const [refreshing, setRefreshing] = useState(false);
+
   useEffect(() => {
-    dataService
+    fetchData();
+  }, []);
+  const fetchData = async () => {
+    await dataService
       .getAllNews()
       .then(res => {
         // console.log(res.data.articles.length);
@@ -20,10 +25,15 @@ const Home = () => {
       .catch(err => {
         console.log(err.response.data);
       });
+  };
+  const onRefresh = React.useCallback(async () => {
+    setRefreshing(true);
+    await fetchData();
+    setRefreshing(false);
   }, []);
   return (
     <View style={styles.container}>
-      <NewsList news={news} />
+      <NewsList news={news} refreshing={refreshing} onRefresh={onRefresh} />
     </View>
   );
 };
