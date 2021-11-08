@@ -4,7 +4,10 @@
       "baseUrl": ".",
       "paths": {
         "palette": ["./src/utilities/palette"],
-        "screens": ["./src/screens"]
+        "screens": ["./src/screens"],
+        "scaling": ["./src/utilities/scaling"],
+        "types": ["./src/types"]
+
         
       }
     },

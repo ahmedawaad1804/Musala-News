@@ -1,12 +1,12 @@
 import React, {useEffect} from 'react';
-import {SafeAreaView, StatusBar, Text} from 'react-native';
+import {SafeAreaView, StatusBar, Text, View} from 'react-native';
 import palette from 'palette';
 import Navigation from '../../navigation/index';
 
 import styles from './style';
 const NewsDetails = () => {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <StatusBar
         barStyle={'default'}
         backgroundColor={palette.black}
@@ -15,7 +15,7 @@ const NewsDetails = () => {
       />
       {/* <Navigation /> */}
       <Text>NewsDetails</Text>
-    </SafeAreaView>
+    </View>
   );
 };
 export default NewsDetails;
