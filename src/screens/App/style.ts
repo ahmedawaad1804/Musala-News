@@ -3,7 +3,7 @@ import palette from 'palette';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: palette.fontColor,
+    backgroundColor: palette.backgroundColor,
     flex: 1,
   },
 });

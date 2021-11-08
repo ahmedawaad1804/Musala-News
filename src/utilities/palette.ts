@@ -1,9 +1,6 @@
-import {useColorScheme} from 'react-native';
-const Scema = () => {
-  console.log('useColorScheme', useColorScheme());
+import React, {useEffect} from 'react';
 
-  return useColorScheme() === 'dark';
-};
+// Colors
 export default {
   white: '#FFFFFF',
   black: '#000000',
@@ -12,5 +9,6 @@ export default {
   placeholdeGrey: '#ccc',
   searchGrey: '#313131',
   red: '#EE4B2B',
-  fontColor: '#FFFFFF',
+  fontColor: '#000000',
+  backgroundColor: '#FFFFFF',
 };
