@@ -3,14 +3,8 @@
       "jsx": "react",
       "baseUrl": ".",
       "paths": {
-        // "screens": ["./src/screens"],
         "palette": ["./src/utilities/palette"],
-        // "scaling": ["./src/utilities/scaling"],
-        // "svg": ["./src/assets/svg"],
-        // "components": ["./src/components"],
-        // "store": ["./src/store"],
-        // "services": ["./src/services"],
-        // "language": ["./src/language"]
+        "screens": ["./src/screens"]
         
       }
     },

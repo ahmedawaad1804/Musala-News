@@ -7,14 +7,10 @@
         "root": ["."],
         "extensions": [".tsx",".ts", ".ios.js", ".android.js"],
         "alias": {
-          // "screens": "./src/screens",
-          "palette": "./src/utilities/palette"
-          // "scaling": "./src/utilities/scaling",
-          // "svg": "./src/assets/svg",
-          // "components": "./src/components",
-          // "store": "./src/store",
-          // "services": "./src/services",
-          // "language": "./src/language"
+          "palette": "./src/utilities/palette",
+          "screens": "./src/screens"
+       
+          
 
         }
       }
